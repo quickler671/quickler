@@ -3,7 +3,9 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://G:\Hackathon\ForGithub\quickler\app\app.iml" filepath="G:\Hackathon\ForGithub\quickler\app\app.iml" />
       <module fileurl="file://$PROJECT_DIR$/quickler.iml" filepath="$PROJECT_DIR$/quickler.iml" />
+      <module fileurl="file://G:\Hackathon\ForGithub\quickler\quickler.iml" filepath="G:\Hackathon\ForGithub\quickler\quickler.iml" />
     </modules>
   </component>
 </project>
