@@ -85,20 +85,35 @@ public class MainActivity extends AppCompatActivity {
                 mDatabase)
         {
             @Override
-            protected void populateViewHolder(RecyclerViewHolder viewHolder, CardData model, int position) {
+            protected void populateViewHolder(final RecyclerViewHolder viewHolder, final CardData model, int position) {
                 viewHolder.setTitle(model.getName());
-                
+
                 viewHolder.bulbbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Log.i("TEST", "Clicked");
+                        model.isbtn = !model.isbtn;
+
+                        if(model.isbtn)
+                        {
+                            viewHolder.bulbbtn.setBackgroundResource(R.drawable.bulbstateon);
+                        }
+                        else
+                            viewHolder.bulbbtn.setBackgroundResource(R.drawable.bulbstateoff);
+
                     }
                 });
 
                 viewHolder.markbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View v) {
-                        Log.i("TEST", "Clicked");
+                        model.ismark = !model.ismark;
+
+                        if(model.ismark)
+                        {
+                            viewHolder.markbtn.setBackgroundResource(R.drawable.ic_bookmark_black_24dp);
+                        }
+                        else
+                            viewHolder.markbtn.setBackgroundResource(R.drawable.ic_bookmark_border_black_24dp);
                     }
                 });
 

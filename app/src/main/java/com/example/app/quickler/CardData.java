@@ -8,6 +8,9 @@ public class CardData {
     String name;
     String image;  //We can use this var to send URL of image stored in Database
 
+    boolean isbtn = false;
+    boolean ismark = false;
+
     //Default Constructor
     public CardData() {
     }
