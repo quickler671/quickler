@@ -14,11 +14,64 @@
         android:orientation="vertical">
 
         <android.support.v7.widget.Toolbar
-            android:layout_height="?attr/actionBarSize"
-            android:layout_width="match_parent"
             android:id="@+id/toolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
             android:background="?attr/colorPrimary"
-            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"/>
+            app:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_margin="50dp"
+            android:layout_height="200dp">
+            <Button
+                android:layout_width="wrap_content"
+                android:id="@+id/yash1"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="News"
+                android:layout_alignParentLeft="true"
+                android:textSize="12sp"/>
+            <de.hdodenhof.circleimageview.CircleImageView
+                xmlns:app="http://schemas.android.com/apk/res-auto"
+                android:id="@+id/aisehi"
+                android:layout_toRightOf="@+id/yash1"
+                android:layout_centerInParent="true"
+                android:padding="5dp"
+                android:layout_centerHorizontal="true"
+                android:layout_centerVertical="true"
+                android:src="@drawable/ic_launcher_background"
+                app:border_color="@color/white"
+                app:border_width="3dp"
+                android:layout_width="100dp"
+                android:layout_height="100dp"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="News"
+                android:layout_toRightOf="@+id/aisehi"
+                android:textSize="12sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentBottom="true"
+                android:textSize="12sp"/>
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="News"
+                android:layout_toRightOf="@+id/aisehi"
+                android:layout_marginBottom="20dp"
+                android:layout_alignParentBottom="true"
+
+                android:textSize="12sp"/>
+
+        </RelativeLayout>
 
         <android.support.v7.widget.RecyclerView
             android:layout_width="match_parent"
@@ -30,4 +83,9 @@
 
     </LinearLayout>
 
+    <!--<TextView-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:layout_marginTop="?attr/actionBarSize"-->
+        <!--android:layout_height="match_parent"-->
+        <!--android:text="yash"/>-->
 </RelativeLayout>
