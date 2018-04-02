@@ -29,7 +29,7 @@ public class ViewCounter {
 			//Insert code to pause video
 		}
 		public void viewincrease(double time){
-			if(time>this.length)
+			if(time>0.7*this.length)
 				this.views++;
 		}
 	}
