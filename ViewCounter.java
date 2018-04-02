@@ -1,5 +1,3 @@
-package Lecture27;
-
 import java.io.*;
 
 public class ViewCounter {
